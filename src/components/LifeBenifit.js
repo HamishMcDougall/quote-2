@@ -15,7 +15,6 @@ import CiLink from './linked/CiLink';
 
 
 
-
 function onChange(e) {
   console.log(`checked = ${e.target.checked}`);
 }
