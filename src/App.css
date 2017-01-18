@@ -1,0 +1,80 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.TopNav{
+  height: 50px;
+  display: block;
+  background-color: #404040;
+  color: white;
+}
+.PaddingMain{
+  padding: 20px;
+}
+.ant-btn{
+  margin-right: 5px !important;
+}
+
+.perMonth{
+  font-size: 10px;
+}
+
+.benefitsBox{
+  border-color: #fffff;
+  border-width: thin;
+  border-style: solid;
+}
+
+
+.BenifitsSpacer{
+  margin-top: 10px;
+
+}
+.padding10{
+  padding: 10px;
+}
+
+.center{
+  width: 50%;
+    margin: 0 auto;
+}
+#components-layout-demo-side .logo {
+  height: 32px;
+  background: #333;
+  border-radius: 6px;
+  margin: 16px;
+}
+
+#components-layout-demo-side .ant-layout-sider-collapsed .anticon {
+	font-size: 16px;
+}
+
+#components-layout-demo-side .ant-layout-sider-collapsed .nav-text {
+	display: none;
+}
+.layout-topaside {
+  height: 100%;
+}
+
+.logo2{
+  color: white;
+  padding: 20px;
+}
+.ant-layout-header{
+  background: black !important;
+
+}
+.gutter-example .ant-row > div {
+  background: transparent;
+  border: 0;
+}
+.gutter-box {
+  padding: 5px 0;
+}
+
+.ant-radio-button-wrapper-checked{
+  background-color: #108ee9 !important;
+  color:white !important;
+}
