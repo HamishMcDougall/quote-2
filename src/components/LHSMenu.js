@@ -28,12 +28,13 @@ class LHSMenu extends Component {
   render() {
     return (
 
-
+<div className="bgLHSNav">
       <Menu onClick={this.handleClick}
               defaultOpenKeys={['sub1']}
               selectedKeys={[this.state.current]}
               mode="inline"
               theme="dark"
+
             >
               <SubMenu key="sub1" title={<span><Icon type="mail" /><span>Navigation One</span></span>}>
                 <MenuItemGroup title="Item 1">
@@ -60,7 +61,7 @@ class LHSMenu extends Component {
                 <Menu.Item key="12">Option 12</Menu.Item>
               </SubMenu>
             </Menu>
-
+</div>
 
 
     );
