@@ -50,6 +50,7 @@ addItemCI(e){
 
 
 handler(item, e){
+  if(confirm('Are you sure you would like to remove this benefit ?')){
   console.log(item.id);
   var itemId = item.id
   var findArray = this.state.items;
@@ -62,6 +63,8 @@ handler(item, e){
       items: DeleteArray
     });
 }
+}
+
 
   render() {
 
