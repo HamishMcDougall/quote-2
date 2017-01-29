@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 
 import { Row, Col, Menu, Dropdown, Icon, Card, Button } from 'antd';
 
-import LifeBenifit from './LifeBenifit'
-import CIBenifit from './CIBenifit'
+import LifeBenefit from '../Benefits/Life/LifeBenefit';
+import CIBenefit from '../Benefits/CI/CIBenefit';
+import TPDBenefit from '../Benefits/TPD/TPDBenefit';
+import IPBenefit from '../Benefits/IP/IPBenefit';
+
 
 
 
@@ -36,10 +39,14 @@ class BenifitSelector extends Component {
       var typeofComponent = item.type;
       var renderComponent
 
-      if(typeofComponent === 'Life'){
-        renderComponent =  <LifeBenifit/>
-      } else if (typeofComponent === 'CI'){
-        renderComponent =  <CIBenifit/>
+      if(typeofComponent === 'Life Cover'){
+        renderComponent =  <LifeBenefit/>
+      } else if (typeofComponent === 'Critical Illness'){
+        renderComponent =  <CIBenefit/>
+      }else if (typeofComponent === 'Total & Permanent Disability'){
+        renderComponent =  <TPDBenefit/>
+      }else if (typeofComponent === 'Income Protection'){
+        renderComponent =  <IPBenefit/>
       }
 
 
@@ -48,7 +55,7 @@ class BenifitSelector extends Component {
         <div className="BenifitsSpacer">
       <Card>
         <Row>
-          <Col span={18}><h3><b>{typeofComponent} Cover</b></h3></Col>
+          <Col span={18}><h3><b>{typeofComponent}</b></h3></Col>
           <Col span={5}>
           Ownership &nbsp;
           <Dropdown overlay={menu}>

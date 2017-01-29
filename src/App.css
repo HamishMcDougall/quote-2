@@ -1,7 +1,13 @@
+#root{
+  background-color: #f2f2f2;
+}
+
+
 html, body{
-    height:100%;
+    /*height:100%;*/
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
 }
 
 .TopNav{
@@ -13,15 +19,26 @@ html, body{
 
 .bgLHSNav{
     background-color: #404040;
-     height:100vh;
 }
+
+.PolicyOutlineNav{
+  height: 150px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+
+
 .PaddingMain{
   padding: 20px;
   background-color: #f2f2f2;
- height:100vh
 }
 .ant-btn{
-  margin-right: 5px !important;
+  margin-left: 5px !important;
+}
+
+.searchButton{
+  margin-right: 5px;
 }
 
 .perMonth{

@@ -5,12 +5,11 @@ import {   Row, Col, Input, Checkbox, Radio } from 'antd';
 
 
 
-import TpdAttached from './TpdAttached';
-import CiAttached from './CiAttached';
+import TpdAttached from './Attached/TpdAttached';
+import CiAttached from './Attached/CiAttached';
 
-import TpdLink from './linked/TpdLink';
-import CiLink from './linked/CiLink';
-
+import TpdLink from './Linked/TpdLink';
+import CiLink from './Linked/CiLink';
 
 
 
@@ -23,8 +22,7 @@ function onChange(e) {
 
 
 
-
-class LifeBenifit extends Component {
+class LifeBenefit extends Component {
 
   constructor(props) {
     super(props);
@@ -39,7 +37,9 @@ class LifeBenifit extends Component {
     let sumValue = e.target.value;
     let newPrice = ((+sumValue) *sumInsuredMultiplier).toFixed(2);;
     this.setState({price:newPrice})
-    console.log(sumValue);
+  //  console.log(sumValue);
+
+
   }
 
 
@@ -122,7 +122,11 @@ ciLink(e){
 
 
 
+
+
+
   render() {
+
 
 
 
@@ -219,4 +223,5 @@ ciLink(e){
   }
 }
 
-export default LifeBenifit;
+
+export default LifeBenefit;

@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 import { Row, Col, } from 'antd';
 
-import ButtonControler from './components/ButtonControler';
+import ButtonControler from './components/Quote/ButtonControler';
 
-import LHSMenu from './components/LHSMenu';
+import LHSMenu from './components/Interface/LHSMenu';
+import TopNav from './components/Interface/TopNav';
 
 
 import './App.css';
@@ -24,13 +25,13 @@ class App extends Component {
 <div>
     <Row>
       <Col span={24}>
-      <div className="TopNav">
-      TAC prototype
-      </div>
+      <TopNav/>
       </Col>
     </Row>
     <Row>
-      <Col span={4}><LHSMenu/></Col>
+      <Col span={4}>
+        <LHSMenu/>
+        </Col>
       <Col span={20}>
         <div className="PaddingMain">
           <ButtonControler/>
